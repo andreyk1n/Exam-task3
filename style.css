@@ -18,13 +18,39 @@ html {
     font-size: 18px;
 }
 
+.mini-title {
+    font-size: 20px;
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+.tac {
+    text-align: center;
+}
+
 /* header */
 header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.header-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.gray-hr {
+    width: 90%;
+    height: 1px;
+    background-color: gray;
+    margin: 0 auto;
 }
 
 .header-links {
@@ -162,4 +188,87 @@ nav ul li a:hover {
     height: 500px;
     background: url('./images/main3.jpg') no-repeat;
     background-size: 100%;
+}
+
+/* gallery */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-row-item1 {
+    width: 33vw;
+    height: 240px;
+    background: url('./images/main1.jpg');
+    background-size: 100%;
+}
+
+.gallery-row-item2 {
+    width: 33vw;
+    height: 240px;
+    background: url('./images/main2.jpg');
+    background-size: 100%;
+}
+
+.gallery-row-item3 {
+    width: 33vw;
+    height: 240px;
+    background: url('./images/main3.jpg');
+    background-size: 100%;
+}
+
+.hidden-container {
+    width: 33vw;
+    height: 240px;
+    opacity: 0;
+    transition-duration: .8s;
+}
+
+.hidden-container:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hiddent-content {
+    width: 33vw;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.hiddent-content .regular {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gray-btn-white {
+    width: 100px;
+    height: 40px;
+    border: 2px solid white;
+    transition-duration: .7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gray-btn-white a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.gray-btn-white:hover {
+    transform: scale(1.3);
 }
